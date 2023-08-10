@@ -1,0 +1,272 @@
+Player:
+    pseudo:stirng
+    elo:integer
+    -ranks : ranks+div
+    -Plateform
+    img:string
+    wins:integer
+    goals:integer
+    assists:integer
+    MVPs:integer
+    shots:integer
+    saves:integer
+
+------------------
+INSERT INTO public.rank (id, division, rank)
+VALUES (1::bigint, 0::smallint, 0::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (2::bigint, 1::smallint, 1::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (3::bigint, 2::smallint, 1::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (4::bigint, 3::smallint, 1::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (5::bigint, 4::smallint, 1::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (6::bigint, 1::smallint, 2::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (7::bigint, 2::smallint, 2::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (8::bigint, 3::smallint, 2::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (9::bigint, 4::smallint, 2::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (10::bigint, 1::smallint, 3::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (11::bigint, 2::smallint, 3::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (12::bigint, 3::smallint, 3::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (13::bigint, 4::smallint, 3::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (14::bigint, 1::smallint, 4::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (15::bigint, 2::smallint, 4::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (16::bigint, 3::smallint, 4::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (17::bigint, 4::smallint, 4::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (18::bigint, 1::smallint, 5::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (19::bigint, 2::smallint, 5::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (20::bigint, 3::smallint, 5::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (21::bigint, 4::smallint, 5::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (22::bigint, 1::smallint, 6::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (23::bigint, 2::smallint, 6::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (24::bigint, 3::smallint, 6::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (25::bigint, 4::smallint, 6::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (26::bigint, 1::smallint, 7::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (27::bigint, 2::smallint, 7::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (28::bigint, 3::smallint, 7::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (29::bigint, 4::smallint, 7::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (30::bigint, 1::smallint, 8::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (31::bigint, 2::smallint, 8::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (32::bigint, 3::smallint, 8::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (33::bigint, 4::smallint, 8::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (34::bigint, 1::smallint, 9::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (35::bigint, 2::smallint, 9::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (36::bigint, 3::smallint, 9::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (37::bigint, 4::smallint, 9::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (38::bigint, 1::smallint, 10::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (39::bigint, 2::smallint, 10::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (40::bigint, 3::smallint, 10::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (41::bigint, 4::smallint, 10::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (42::bigint, 1::smallint, 11::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (43::bigint, 2::smallint, 11::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (44::bigint, 3::smallint, 11::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (45::bigint, 4::smallint, 11::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (46::bigint, 1::smallint, 12::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (47::bigint, 2::smallint, 12::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (48::bigint, 3::smallint, 12::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (49::bigint, 4::smallint, 12::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (50::bigint, 1::smallint, 13::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (51::bigint, 2::smallint, 13::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (52::bigint, 3::smallint, 13::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (53::bigint, 4::smallint, 13::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (54::bigint, 1::smallint, 14::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (55::bigint, 2::smallint, 14::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (56::bigint, 3::smallint, 14::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (57::bigint, 4::smallint, 14::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (58::bigint, 1::smallint, 15::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (59::bigint, 2::smallint, 15::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (60::bigint, 3::smallint, 15::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (61::bigint, 4::smallint, 15::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (62::bigint, 1::smallint, 16::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (63::bigint, 2::smallint, 16::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (64::bigint, 3::smallint, 16::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (65::bigint, 4::smallint, 16::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (66::bigint, 1::smallint, 17::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (67::bigint, 2::smallint, 17::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (68::bigint, 3::smallint, 17::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (69::bigint, 4::smallint, 17::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (70::bigint, 1::smallint, 18::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (71::bigint, 2::smallint, 18::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (72::bigint, 3::smallint, 18::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (73::bigint, 4::smallint, 18::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (74::bigint, 1::smallint, 19::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (75::bigint, 2::smallint, 19::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (76::bigint, 3::smallint, 19::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (77::bigint, 4::smallint, 19::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (78::bigint, 1::smallint, 20::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (79::bigint, 2::smallint, 20::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (80::bigint, 3::smallint, 20::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (81::bigint, 4::smallint, 20::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (82::bigint, 1::smallint, 21::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (83::bigint, 2::smallint, 21::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (84::bigint, 3::smallint, 21::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (85::bigint, 4::smallint, 21::smallint);
+
+INSERT INTO public.rank (id, division, rank)
+VALUES (86::bigint, 0::smallint, 22::smallint);
+
