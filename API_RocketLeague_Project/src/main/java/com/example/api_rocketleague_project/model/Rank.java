@@ -4,15 +4,14 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity
+@Embeddable
 @Getter
 @Setter
 @Table(name = "Rank")
 public class Rank {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
+    private String name;
+    @Enumerated(EnumType.STRING)
     private Ranks rank;
+    @Enumerated(EnumType.STRING)
     private Divisions division;
 }
