@@ -28,4 +28,20 @@ public class Player {
     private Integer shots;
     private Integer saves;
 
+    @Override
+    public String toString() {
+        return "Player{" +
+                "id=" + id +
+                ", pseudo='" + pseudo + '\'' +
+                ", ranks=" + ranks +
+                ", plateform=" + plateform +
+                ", image='" + image + '\'' +
+                ", wins=" + wins +
+                ", goals=" + goals +
+                ", assists=" + assists +
+                ", mvps=" + mvps +
+                ", shots=" + shots +
+                ", saves=" + saves +
+                '}';
+    }
 }

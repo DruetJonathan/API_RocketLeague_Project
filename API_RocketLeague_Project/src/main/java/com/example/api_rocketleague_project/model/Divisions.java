@@ -1,7 +1,7 @@
 package com.example.api_rocketleague_project.model;
 
 public enum Divisions {
-    UNRANKED("None"),
+    UNRANKED("UNRANKED"),
     DIVISION_I("Division 1"), DIVISION_II("Division 2"), DIVISION_III("Division 3"), DIVISION_IV("Division 4");
 
     private final String value;
