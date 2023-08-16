@@ -27,7 +27,7 @@ public class PlayerController {
     }
 
     @PostMapping("/player/modify/{id}")
-    public ResponseEntity<Player> updatePlayer(Player player, @PathVariable Long id) {
+    public ResponseEntity<Player> updatePlayer(@RequestBody Player player, @PathVariable Long id) {
         return ResponseEntity.ok(this.playerService.modify(player));
     }
 

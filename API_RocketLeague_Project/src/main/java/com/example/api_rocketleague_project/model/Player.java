@@ -27,6 +27,10 @@ public class Player {
     private Integer mvps;
     private Integer shots;
     private Integer saves;
+    @ManyToOne
+    @JoinColumn(name = "team_id")
+    private Team team;
+
 
     @Override
     public String toString() {
@@ -42,6 +46,7 @@ public class Player {
                 ", mvps=" + mvps +
                 ", shots=" + shots +
                 ", saves=" + saves +
+                ", team=" + team +
                 '}';
     }
 }
