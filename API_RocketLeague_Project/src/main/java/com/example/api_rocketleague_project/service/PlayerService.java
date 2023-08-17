@@ -1,7 +1,7 @@
 package com.example.api_rocketleague_project.service;
 
 
-import com.example.api_rocketleague_project.model.Player;
+import com.example.api_rocketleague_project.model.entity.Player;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

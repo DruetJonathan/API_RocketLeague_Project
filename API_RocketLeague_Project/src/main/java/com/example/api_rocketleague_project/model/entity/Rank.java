@@ -1,4 +1,4 @@
-package com.example.api_rocketleague_project.model;
+package com.example.api_rocketleague_project.model.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -9,7 +9,6 @@ import lombok.Setter;
 @Setter
 @Table(name = "Rank")
 public class Rank {
-    private String name;
     @Enumerated(EnumType.STRING)
     private Ranks rank;
     @Enumerated(EnumType.STRING)

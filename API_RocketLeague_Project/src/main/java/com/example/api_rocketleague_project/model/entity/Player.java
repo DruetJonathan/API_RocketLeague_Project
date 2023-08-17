@@ -1,5 +1,6 @@
-package com.example.api_rocketleague_project.model;
+package com.example.api_rocketleague_project.model.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -29,6 +30,7 @@ public class Player {
     private Integer saves;
     @ManyToOne
     @JoinColumn(name = "team_id")
+    @JsonIgnore
     private Team team;
 
 

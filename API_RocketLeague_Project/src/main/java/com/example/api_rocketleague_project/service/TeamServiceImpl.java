@@ -1,6 +1,6 @@
 package com.example.api_rocketleague_project.service;
 
-import com.example.api_rocketleague_project.model.Team;
+import com.example.api_rocketleague_project.model.entity.Team;
 import com.example.api_rocketleague_project.repository.TeamRepository;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +9,11 @@ import java.util.List;
 @Service
 public class TeamServiceImpl implements TeamService{
     TeamRepository teamRepository;
+
+    public TeamServiceImpl(TeamRepository teamRepository) {
+        this.teamRepository = teamRepository;
+    }
+
     @Override
     public List<Team> getAll() {
         return this.teamRepository.findAll();

@@ -1,4 +1,4 @@
-package com.example.api_rocketleague_project.model;
+package com.example.api_rocketleague_project.model.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;

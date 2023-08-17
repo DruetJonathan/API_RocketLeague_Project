@@ -1,11 +1,9 @@
 package com.example.api_rocketleague_project.controller;
 
 
-import com.example.api_rocketleague_project.model.Player;
-import com.example.api_rocketleague_project.model.Team;
+import com.example.api_rocketleague_project.model.entity.Team;
 import com.example.api_rocketleague_project.service.TeamService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,9 +15,9 @@ public class TeamController {
     public TeamController(TeamService teamService) {
         this.teamService = teamService;
     }
-    @RequestMapping("/teams")
+    @GetMapping("/teams")
     public ResponseEntity<List<Team>> getPlayers() {
-        return ResponseEntity.status(200).body(this.teamService.getAll());
+        return ResponseEntity.ok(this.teamService.getAll());
     }
 
     @GetMapping("/team/{id}")
