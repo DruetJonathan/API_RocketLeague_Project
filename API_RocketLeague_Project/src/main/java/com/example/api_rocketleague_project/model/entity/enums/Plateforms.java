@@ -1,4 +1,4 @@
-package com.example.api_rocketleague_project.model.entity;
+package com.example.api_rocketleague_project.model.entity.enums;
 
 public enum Plateforms {
     PC("PC"),

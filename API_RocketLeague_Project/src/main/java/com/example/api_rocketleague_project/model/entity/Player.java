@@ -1,5 +1,6 @@
 package com.example.api_rocketleague_project.model.entity;
 
+import com.example.api_rocketleague_project.model.entity.enums.Plateforms;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Getter;

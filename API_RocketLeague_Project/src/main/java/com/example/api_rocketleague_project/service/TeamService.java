@@ -9,7 +9,6 @@ import java.util.List;
 public interface TeamService {
     List<Team> getAll();
     Team getById(Long id);
-    Team add(Team team);
-    Team modify(Team team);
+    Team save(Team team);
     boolean delete(Team team);
 }

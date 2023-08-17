@@ -10,7 +10,8 @@ import java.util.List;
 public interface PlayerService {
     List<Player> getAll();
     Player getById(Long id);
-    Player add(Player player);
-    Player modify(Player player);
+    Player save(Player player);
     boolean delete(Player player);
+
+    List<Player> getAllPlayersById(Long[] ids);
 }

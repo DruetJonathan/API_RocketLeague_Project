@@ -1,7 +1,10 @@
 package com.example.api_rocketleague_project.service;
 
+import com.example.api_rocketleague_project.Exception.DeletionFailedException;
+import com.example.api_rocketleague_project.Exception.RessourceNotFoundException;
 import com.example.api_rocketleague_project.model.entity.Player;
 import com.example.api_rocketleague_project.repository.PlayerRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -21,26 +24,27 @@ public class PlayerServiceImpl implements PlayerService {
 
     @Override
     public Player getById(Long id) {
-        return this.playerRepository.findById(id).orElseThrow();
+        return this.playerRepository.findById(id)
+                .orElseThrow(() -> new RessourceNotFoundException("player",id));
     }
-
     @Override
-    public Player add(Player player) {
+    @Transactional
+    public Player save(Player player) {
         return this.playerRepository.save(player);
     }
 
     @Override
-    public Player modify(Player player) {
-        return this.playerRepository.save(player);
-    }
-
-    @Override
+    @Transactional
     public boolean delete(Player player) {
         try {
             this.playerRepository.delete(player);
-        }catch (RuntimeException e){
-            return false;
+        }catch (DeletionFailedException e){
+            throw new DeletionFailedException(player.getPseudo(),player.getId());
         }
         return true;
+    }
+    @Override
+    public List<Player> getAllPlayersById(Long[] ids){
+        return this.playerRepository.findAllById(List.of(ids));
     }
 }
