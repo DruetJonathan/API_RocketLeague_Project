@@ -16,7 +16,6 @@ public class PlayerDTO {
     @NotBlank(message = "Le pseudo ne peut pas être vide et doit contenir entre {min} et {max} caractères.")
     @Size(min = 3, max = 32, message = "Le pseudo doit contenir entre {min} et {max} caractères.")
     private String pseudo;
-
     @NotEmpty(message = "La liste des ranks ne peut pas être vide")
     private List<Rank> ranks;
     @NotEmpty(message = "La plateforme ne peut pas être vide")
